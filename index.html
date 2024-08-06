@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新蓝青学校</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff; /* Blue links */
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1); /* Button hover effect */
+        }
+
+        .hero {
+            background-color: #fff;
+            padding: 50px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .exhibitions {
+            background-color: #fff;
+            padding: 50px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>新蓝青学校</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <img src="https://via.placeholder.com/500x300" alt="Hero Image">
+            <p>欢迎来到我们的官方网站！</p>
+        </section>
+
+        <section class="exhibitions">
+            <h2>展览信息</h2>
+            <p>这里是我们即将举行的展览详情。</p>
+        </section>
+
+        <footer class="footer">
+            <p>版权所有 © 2024 新蓝青学校 保留所有权利</p>
+            <p>ICP备案号: 浙ICP备291023号</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add button hover effect using jQuery (make sure to include jQuery in your actual project)
+        $(document).ready(function() {
+            $('nav ul li a').hover(function() {
+                $(this).stop().animate({ transform: 'scale(1.1)' }, 200);
+            }, function() {
+                $(this).stop().animate({ transform: 'scale(1)' }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
